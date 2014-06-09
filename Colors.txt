@@ -1,0 +1,47 @@
+/*
+	List of color styles that i could use if I ever make a flat style webpage
+	<--Whites-->
+	#fffcf5; -- cream
+	#fff;    -- white
+
+	<--blacks-->
+	#f3efe6; -- gray
+	#5b5c5d; -- dark gray
+	#393a3b; -- darker gray
+	#2b2b2b; -- even darker gray
+
+	<--reds-->
+	#eb5055; -- light red
+	#da3c26; -- red
+	#7b0446; -- purple
+	#ff6060; -- salmon
+	#ff5c57; -- dark salmon
+
+	<--orange-->
+	#f27e3e; -- burnt orange
+
+	<--greens-->
+	#68c39f; -- green
+	#c9e6de; -- light green
+	#7fe35e; -- soft green
+
+	<--yellows-->
+	#f5e653; -- yellow
+	#fdbd12; -- golden rod
+	#f9c732; -- gold yellow
+
+	<--blues-->
+	#449bb5; -- blue
+	#45bcd2; -- light blue
+	#b1e1ed; -- lighter blue
+	#043d5d; -- dark blue (night)
+	#27313d; -- black/blue
+	#145d5e; -- teal
+	#07b196; -- light teal
+	#4aa0be; -- mat blue
+	#8350C1; -- purple
+	
+*/
+	
+	
+	

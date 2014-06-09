@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+<!--    <script  language="javascript" type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44282114-1', 'tsterne.com');
+        ga('send', 'pageview');
+
+    </script>-->
+    <style type="text/css">
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, firstSection, credits, menu, time, mark, audio, video, canvas
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body
+        {
+            background-color: #043d5d;
+            font-family: "futura-pt" , Helvetica, sans-serif;
+            color: #FFF;
+            font-size: 100%;
+        }
+        h1, a, p
+        {
+            margin: 0;
+            margin-top: 0.2em;
+            width: 100%;
+            font-weight: lighter;
+            text-transform: uppercase;
+            font-size: 4.250em;
+            letter-spacing: 0.3em;
+            line-height: 2em;
+            -webkit-font-smoothing: antialiased;
+        }
+        h2
+        {
+            width: 35%;
+            font-weight: 600;
+            font-size: 3.0em;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            line-height: 2em;
+            -webkit-font-smoothing: antialiased;
+            white-space:nowrap;
+        }
+        #intro
+        {
+            font-size: 7.250em;
+            letter-spacing: 0.175em;
+        }
+        a
+        {
+            color: #FFF;
+            text-decoration: none;
+            width: 300px;
+            font-weight: 300;
+            font-size: 2.250em;
+            line-height: 1.5em;
+        }
+        p
+        {
+            width: 75%;
+            max-width:1000px;
+            font-weight: normal;
+            text-transform: none;
+            font-size: 135%;
+            letter-spacing: 0.2em;
+            line-height: 2.1em;
+            text-align: left;
+            text-indent:75px;
+        }
+        b
+        {
+            font-size:120%;
+        }
+        .link, .downloadlink
+        {
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #eb5055;
+            border-radius: 5px;
+            text-align: center;
+            white-space:nowrap;
+            -webkit-transition: all 200ms ease-in-out;
+            -moz-transition: all 200ms ease-in-out;
+            -ms-transition: all 200ms ease-in-out;
+            -o-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+        }
+        .downloadlink, .connect
+        {
+            -webkit-transition: all 0ms ease-in-out;
+            -moz-transition: all 0ms ease-in-out;
+            -ms-transition: all 0ms ease-in-out;
+            -o-transition: all 0ms ease-in-out;
+            transition: all 0ms ease-in-out;
+        }
+        .link:hover
+        {
+            text-decoration: none;
+            -webkit-transform: translate3d(0, 5px, 0);
+            -moz-transform: translate3d(0, 5px, 0);
+            -ms-transform: translate3d(0, 5px, 0);
+        }
+        .animated
+        {
+            cursor: pointer;
+            -webkit-animation-duration: 2.5s;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 0;
+            -webkit-animation-play-state: running;
+            -moz-animation-duration: 2.5s;
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-delay: 0;
+            -moz-animation-play-state: running;
+        }
+        .animated.hinge
+        {
+            -webkit-animation-duration:2.5s;
+            -moz-animation-duration:2.5s;
+            -ms-animation-duration:2.5s;
+            -o-animation-duration:2.5s;
+            animation-duration:2.5s;
+        }
+        @-webkit-keyframes bounce {
+	        0%, 36%, 76%, 100% {-webkit-transform: translateY(0);}	
+	        15% {-webkit-transform: translateY(-7px);}
+	        56% {-webkit-transform: translateY(-2px);}	
+        }
+        @-moz-keyframes bounce {
+	        0%, 36%, 76%, 100% {-webkit-transform: translateY(0);}	
+	        15% {-webkit-transform: translateY(-7px);}
+	        56% {-webkit-transform: translateY(-2px);}	
+        }
+        @-o-keyframes bounce {
+	        0%, 36%, 76%, 100% {-webkit-transform: translateY(0);}	
+	        15% {-webkit-transform: translateY(-7px);}
+	        56% {-webkit-transform: translateY(-2px);}		
+        }
+        @keyframes bounce {
+	        0%, 36%, 76%, 100% {-webkit-transform: translateY(0);}	
+	        15% {-webkit-transform: translateY(-7px);}
+	        56% {-webkit-transform: translateY(-2px);}	
+        }
+        .bounce {
+	        -webkit-animation-name: bounce;
+	        -moz-animation-name: bounce;
+	        -o-animation-name: bounce;
+	        animation-name: bounce;
+        }
+        .downloadlink:hover
+        {
+            text-decoration: none;
+            background-color: #55bd94;
+        }
+        #download
+        {
+            -webkit-transform: translate3d(0, -60px, 0);
+            -moz-transform: translate3d(0, -60px, 0);
+            -ms-transform: translate3d(0, -60px, 0);
+        }
+        .semi
+        {
+            font-weight: bolder;
+        }
+        .content
+        {
+                display: table-cell;
+                vertical-align: middle; 
+                margin: 0px auto;
+                width: 100%;  
+        }
+        .resources
+        {
+            display:table-footer-group;
+        }
+        
+        section
+        {
+            position: realative;
+            width: 100%;
+            height: 600px;
+            display: block;
+            overflow: scroll;
+            overflow-y:hidden;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            display:table;
+            min-height: 600px;
+            min-width:800px
+        }
+        #aboutInfo
+        {
+            padding-top:2em;
+        }
+        #cover
+        {
+            background-color: #b1e1ed;
+        }
+        #experience
+        {
+            position:absolute;
+            background-color: #449bb5;
+        }
+        #ventures
+        {
+            position:absolute;
+            background-color: #27313d;
+            left:100%;
+            z-index:3;
+        }
+        #progressive
+        {
+            position:absolute;
+            background-color: #0056B7;
+            left:200%;
+        }
+        #about
+        {
+            background-color: #68c39f;
+        }
+        #resume
+        {
+            /*background-color: #f5e653;*/
+            background-color: #6666FF;
+        }
+        ::-webkit-scrollbar { 
+            display: none;
+        }
+        .wrapper
+        {
+            position:absolute;
+            padding-left:15px;
+            z-index:1;
+
+        }
+        .thumbnails 
+        {
+            display:inline-block;
+            padding: 35px;
+        }
+        .thumbnail 
+        {
+            display: table;
+            float:left;
+            position:relative;
+            width: 396px;
+            height: 146px;
+            padding-right: 75px;
+
+        }
+        .thumbnail img
+        {
+            padding: 0px 10px 0px 10px;
+            width: 396px;
+            height: 146px;
+            display: table;
+            position: relative;
+            background-color: #2b2b2b;
+            z-index: 1;
+            -webkit-transition: box-shadow 0.095s linear;
+            -moz-transition: box-shadow 0.065s linear;
+            -o-transition: box-shadow 0.065s linear;
+            -ms-transition: box-shadow 0.065s linear;
+            transition: box-shadow 0.065s linear;
+        }
+        .thumbnail:hover img {
+            margin: -10px;
+            width: 416px;
+            height: 166px;
+            position: absolute;
+            z-index: 3;
+            -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.65);
+            -moz-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.65);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.65);
+        }
+        .star
+        {
+            opacity:0.85;
+            z-index: -1;
+            -webkit-animation-duration: 14s;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 0;
+            -webkit-animation-play-state: running;
+            -moz-animation-duration: 14s;
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-delay: 0;
+            -moz-animation-play-state: running;
+            -webkit-transform: scale(0.7);
+	        -moz-transform: scale(0.7);
+	        -o-transform: scale(0.7);
+	        -ms-transform: scale(0.7);
+	        transform: scale(0.7);
+        }
+        .moon
+        {
+            opacity:1;
+            z-index: 0;
+            padding-right:5000px;
+            -webkit-transform: scale(1.5);
+	        -moz-transform: scale(1.5);
+	        -o-transform: scale(1.5);
+	        -ms-transform: scale(1.5);
+	        transform: scale(1.5);
+            -webkit-animation-duration: 100s;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: once;
+            -webkit-animation-delay: 0;
+            -webkit-animation-play-state: running;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-duration: 100s;
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-iteration-count: once;
+            -moz-animation-delay: 0;
+            -moz-animation-play-state: running;
+            -moz-animation-fill-mode: forwards;
+            
+
+        }
+        @-moz-keyframes goodNight {
+            0% 
+            {
+	            -moz-transform:     scale(1.5) rotate(-10deg);
+            }
+            100% {
+	            -moz-transform:     scale(0.85) rotate(65deg);
+            }                                                            
+        }                                                                
+        @-webkit-keyframes goodNight                                     
+        {                                                                
+             0%                                                          
+            {                                                            
+                -webkit-transform:  scale(1.5) rotate(-10deg);                              
+            }                                                            
+            100% {                                                       
+                -webkit-transform:  scale(0.85) rotate(65deg);
+            }
+        }
+        @-webkit-keyframes twinkle {
+	        0%, 34%, 84%,100% {-webkit-transform: scale(0.7) rotate(0deg);}	
+	        17% {-webkit-transform: scale(0.3) rotate(90deg);}
+            42% {-webkit-transform: scale(0.75) rotate(40deg);}
+            67% {-webkit-transform: scale(0.9) rotate(-90deg);}
+            92% {-webkit-transform: scale(0.85) rotate(-40deg);}
+        }
+        @-moz-keyframes twinkle {
+	        0%, 34%, 84%,100% {-moz-transform: scale(0.7) rotate(0deg);}	
+	        17% {-moz-transform: scale(0.3) rotate(90deg);}
+            42% {-moz-transform: scale(0.75) rotate(40deg);}
+            67% {-moz-transform: scale(0.9) rotate(-90deg);}
+            92% {-moz-transform: scale(0.85) rotate(-40deg);}
+        }
+        @-o-keyframes twinkle {
+	        0%, 34%, 84%,100% {-o-transform: scale(0.7) rotate(0deg);}	
+	        17% {-o-transform: scale(0.3) rotate(90deg);}
+            42% {-o-transform: scale(0.75) rotate(40deg);}
+            67% {-o-transform: scale(0.9) rotate(-90deg);}
+            92% {-o-transform: scale(0.85) rotate(-40deg);}
+        }        
+        @-ms-keyframes twinkle {
+	        0%, 34%, 84%,100% {-ms-transform: scale(0.7) rotate(0deg);}	
+	        17% {-ms-transform: scale(0.3) rotate(90deg);}
+            42% {-ms-transform: scale(0.75) rotate(40deg);}
+            67% {-ms-transform: scale(0.9) rotate(-90deg);}
+            92% {-ms-transform: scale(0.85) rotate(-40deg);}
+        }
+        @keyframes twinkle {
+	        0%, 34%, 84%,100% {transform: scale(0.7) rotate(0deg);}	
+	        17% {transform: scale(0.3) rotate(90deg);}
+            42% {transform: scale(0.75) rotate(40deg);}
+            67% {transform: scale(0.9) rotate(-90deg);}
+            92% {transform: scale(0.85) rotate(-40deg);}
+        }
+        .twinkle {
+	        -webkit-animation-name: twinkle;
+	        -moz-animation-name: twinkle;
+	        -o-animation-name: twinkle;
+	        animation-name: twinkle;
+
+        }
+        .moonAction
+        {
+	        -webkit-animation-name: goodNight;
+	        -moz-animation-name: goodNight;
+	        -o-animation-name: goodNight;
+	        animation-name: goodNight;
+
+        }
+        .E {
+           color: rgba(0, 0, 0, 0);
+           display:inline;
+           height:0%;
+           width:0%;
+           background:url(Images/E-normal.png) 27% 45% no-repeat;
+           background-size:62% 64%;
+        }
+        .E.accent {
+           background:url(Images/E-accent.png) 26% 0% no-repeat;
+           background-size:62% 82%;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        function setDimensions() {
+            var height = 0;
+            var body = window.document.body;
+            if (window.innerHeight) {
+                height = window.innerHeight;
+            } else if (body.parentElement.clientHeight) {
+                height = body.parentElement.clientHeight;
+            } else if (body && body.clientHeight) {
+                height = body.clientHeight;
+            }
+
+            var width = getWidth();
+
+            var element = document.getElementById('cover');
+            element.style.height = (height + "px");
+            var heightFactor = [1, 1, 1, 2, 2, 1, 4];
+            var constFator = [0, 0, 0, 0, 0, -4, 0];
+            var widthFactor = [-1, -1, -1, -1, -1, 3, 3];
+            var sectionIdArray = ['experience', 'about', 'resume', 'ventures', 'progressive', 'experiencesection', 'background'];
+            for (var i = 0; i < sectionIdArray.length; i++) {
+                element = document.getElementById(sectionIdArray[i]);
+                element.style.height = ((heightFactor[i] * height + constFator[i]) + "px");
+                if (widthFactor[i] >= 0) {
+                    element.style.width = (widthFactor[i] * width + "px");
+                }
+            }
+            //height of image
+            element = document.getElementById('resumeImage');
+            element.style.height = (0.70 * (height) + "px");
+            element.style.padding = (((0.15 * (height)) / 2) + "px 0px " + ((0.15 * (height)) / 2) + "px 0px");
+        }
+        function makeStars() {
+            (function printMsg() {
+                var node = document.getElementById("background");
+                var code = "<img class=\"moon moonAction\" id=\"moon\" src=\"Images/Moon.png\" style=\"position:absolute;top:50%;left:50%;\" alt=\"moon\" /><img src=\"Images/city.svg\" style=\"position:absolute;top:14.5%;left:34%;width:66%;\" alt=\"city\" />"; 
+                var numStars = 40;
+                for (var i = 1; i < numStars+1; i++) {
+                    code += "<img class=\"star\" id=\"star" + i + "\" src=\"Images/Star.png\" style=\"position:absolute;top:" + Math.floor((Math.random() * 38) + 0) +"%;left:" + Math.floor((Math.random() * 67) + 34) +"%;\" alt=\"star\" />";
+                }
+                node.innerHTML = code;
+                code = "<script>$(document).ready(function () {";
+                for (var i = 1; i < numStars+1; i++) {
+                    code += "$('#star" + i +"').addClass(\"twinkle\").delay(" + Math.floor((Math.random() * 250) + 0) + ").queue(function (next) {"
+                }
+                for (var i = 1; i < numStars+1; i++) {
+                    code += "});"
+                }
+                code += "});</sc" +'ript>';
+                document.write(code);
+                //set moon padding
+                element = document.getElementById('moon');
+                element.style.paddingRight = (2.5 * getWidth() + "px");
+            })();
+        }
+        function getWidth() {
+            var width = 0;
+            var body = window.document.body;
+            if (window.innerWidth) {
+                width = window.innerWidth;
+            } else if (body.parentElement.clientWidth) {
+                width = body.parentElement.clientWidth;
+            } else if (body && body.clientWidth) {
+                width = body.clientWidth;
+            }
+            return width;
+        }
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body onresize="setDimensions()" onload="setDimensions()">
+<section id="cover">
+<div align="center" class="content">
+<h1 id="intro">T<span class="E">e</span>ddy St<span class="E">e</span>rn<span class="E">e</span></h1>
+<div style="display:inline-block;">
+<div class="link"><a class="verticle" href="#about">About</a></div>
+<div class="link"><a class="verticle" href="#experience">Experience</a></div>
+<div class="link"><a class="verticle" href="#resume">Résumé</a></div></div>
+</div>
+<div class="resources">
+<div style="float:right;padding-bottom:50px;padding-right:50px;">
+<div style="display:inline-block;">
+<div class="animated" style="float:left;"><a href="http://www.linkedin.com/pub/theodore-sterne/40/708/19"><img src="Icons/Social/linkedin.png" alt="LinkedIn"/></a></div>
+<div class="animated" style="float:left;"><a href="mailto:sternetj@rose-hulman.edu?subject=Hello Via tsterne.com" class="animated bounce"><img src="Icons/Social/gmail.png" alt="Mail" /></a></div>
+<div class="animated" style="float:left;"><a href="https://github.com/sternetj" class="animated bounce"><img src="Icons/Social/git.png" alt="git hub" /></a></div>
+<div class="animated" style="float:left;"><a href="https://twitter.com/teddysterne" class="animated bounce"><img src="Icons/Social/twitter.png" alt="twitter" /></a></div>
+</div>
+</div>
+</div>
+</section>
+<section id="about">
+<div class="wrapper">
+<h1>about</h1>
+<div class="link"><a class="verticle" href="#cover">top</a></div>
+</div>
+<div align="center" class="content" id="aboutInfo">
+<p>Hi, I am  <b>Teddy Sterne</b> a Computer Science and Software Engineering double major 
+studying at <b>Rose-Hulman Institute of Technology.</b> I am currently a Junior and will
+graduate in May, 2015.</p>
+<br />
+<p>I have a wide range of experiences gained during both my educational and professional work. My main 
+focus is in <b>C#</b> development but I am also well-versed in <b>SQL</b>, <b>Java</b>, <b>C</b>, 
+<b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</p>
+<br />
+<p>I have a work hard play hard outlook on life and spend my time completing school assignments, working on side 
+projects, solving puzzles, and visting amusement parks whenever the chance presents itself.</p>
+</div>
+</section>
+<section id="experiencesection" style="display:inline-block;">
+<section id="experience">
+<div class="wrapper">
+<h1>Experience</h1>
+<div class="link"><a class="verticle" href="#cover">top</a></div>
+</div>
+<div align="center" class="content">
+<div style="display:inline-block;">
+<div class="thumbnails">
+    <a class="right" href="#ventures">
+        <div class="thumbnail">
+            <div><img alt="logo" align="middle" src="Images/ventures.png" width="356px" /></div>
+        </div>
+    </a>
+    <a class="right" href="#progressive">
+        <div class="thumbnail">
+            <div><img alt="logo" align="middle" src="Images/logo.svg" width="356px" /></div>
+        </div>
+    </a>
+</div>
+</div>
+</section>
+<section id="ventures">
+<div class="wrapper">
+<h2>Rose-Hulman Ventures</h2>
+<div class="link"><a class="left" href="#experience">Back</a></div>
+</div>
+<div align="center" class="content">
+<p><b>Rose-Hulman Ventures</b> is a contract company that employs Rose-Hulman 
+students to create solutions to the real world problems that clients need us to solve. 
+Students must apply for the position just like they would at any other internship.
+During my time at Rose-Hulman Ventures I worked on two unique projects. </p>
+<br />
+<p>The first project was for <b>Edgile, Inc</b>, a company based out of San Jose, CA. Working on a team of two other developers 
+and a senior developer we created a <b>Silverlight</b> website called <b>iGRC</b> that helps 
+companies track their Governance, Risk, and Compliance with different laws. I worked with a library 
+from <b>ComponentArt</b> that allowed us to create graphs, trends, and gauges to visually represent a company's 
+current status. I also worked with LINQ to aggergate large amounts of data into different tables.</p>
+<br />
+<p>My second project was for a <b>Jeffrey Kline M.D.</b> Vice Chair of Research at the Indiana 
+University School of Medicine. Dr. Kline had developed an algorithm for prediciting the 
+percent chance of a patient developing a clot within the next 30 days. We were ask to create a 
+C# application that would recieve data being streamed by a serial port device and build a UI that
+would allow a nurse to run the test on the patient and have it produce the result for them.</p>
+</div>
+</section>
+<section id="progressive">
+<div class="wrapper">
+<h2>Progressive Insurance</h2>
+<div class="link"><a class="left" href="#experience">Back</a></div>
+</div>
+<div align="center" class="content">
+<p>
+<b>Progressive Casualty Insurance Comany</b> is a Fortune 500 company that is headquartered in Mayfield Village, OH.
+I interned at Progressive between my sophomore and junior year on their actuarial analysis and reporting system team
+know as ProSTAR.
+</p>
+</div>
+</section>
+</section>
+<section id="resume">
+<div class="wrapper">
+<h1>Résumé</h1>
+<div class="link"><a class="verticle" href="#cover">top</a></div>
+</div>
+<div align="center" style="display:tr">
+<div align="center" class="content">
+<img id="resumeImage" src="Documents/Resume-full.PNG" alt="Résumé" />
+</div>
+</div>
+<div class="resources">
+<div id="download" style="float:right;padding-right:7%">
+<div class="downloadlink"><a href="Documents/cs_sternetj.pdf" download="CSSE_Sternetj">Download</a></div>
+</div>
+<!--<div style="float:right;padding-bottom:50px;padding-right:50px;">
+<a href="Documents/cs_sternetj.pdf" download="CSSE_Sternetj"><img src="Icons/Set 1/PNG/4.png" alt="Download Résumé" /></a>
+</div>-->
+</div>
+</section>
+<section id="background" style="position:absolute;top:0px;left:0px;z-index:-1;">
+</section>
+    <script type="text/javascript">
+        var bounceCount = 0;
+        $("a.verticle").click(function (e) {
+            // Prevent a page reload when a link is pressed
+            e.preventDefault();
+            // Scroll
+            $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        });
+        $("a.left").click(function (e) {
+            // Prevent a page reload when a link is pressed
+            e.preventDefault();
+            // Scroll
+            $('html, body').animate({ scrollLeft: $($(this).attr("href")).offset().left }, 500);
+        });
+        $("a.right").click(function (e) {
+            // Prevent a page reload when a link is pressed
+            e.preventDefault();
+            // Scroll
+            $('html, body').animate({ scrollLeft: "+=" + $($(this).attr("href")).offset().left }, 500);
+        });
+        $('.animated').mouseover(function () {
+            if (bounceCount == 0) { $(this).addClass("bounce"); }
+            else {
+                bounceCount++;
+                $(this).one('animationiteration webkitAnimationIteration', function () {
+                    $(this).addClass("bounce");
+                });
+            }
+        });
+        $('.animated').mouseout(function () {
+            $(this).one('animationiteration webkitAnimationIteration', function() {
+                $(this).removeClass("bounce");
+            });
+        });
+    </script>
+    <script>
+        makeStars()
+    </script>
+</body>
+</html>
