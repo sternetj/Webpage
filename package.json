@@ -1,0 +1,20 @@
+{
+  "name": "tsterne.com",
+  "version": "1.0.0",
+  "description": "Personal website for Software Developer Teddy Sterne",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sternetj@github.com/sternetj/Webpage.git"
+  },
+  "author": "Teddy Sterne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sternetj/Webpage/issues"
+  },
+  "homepage": "https://github.com/sternetj/Webpage#readme"
+}
