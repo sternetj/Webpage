@@ -48,10 +48,29 @@
       <div class="link"><a class="verticle" href="#cover">top</a></div>
     </div>
     <div align="center" class="content" id="aboutInfo">
-      <p>Hi, I am <b>Teddy Sterne</b> a Computer Science and Software Engineering double major studying at <a href="http://www.rose-hulman.edu"><b>Rose-Hulman Institute of Technology</b></a>. I am currently a Junior and will graduate in May, 2015.</p>
+      <p>Hi, I am <b>Teddy Sterne</b> a Software Engineer living in Indianapolis Indiana. I am currently working as a consultant for <b>Allegient</b>.</p>
       <br />
-      <p>I have a wide range of experiences gained during both my educational and professional work. My main focus is in <b>C#</b> development but I am also well-versed in <b>SQL</b>, <b>Java</b>, <b>C</b>,
-        <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</p>
+      <p>I am a full stack developer and have a wide range of experiences gained during both my professional and educational work.
+         Over the past year I have done a lot of development using <b>Angular</b>, <b>ASP.NET</b>, and <b>.NetCore</b>.
+         I have also been playing around with builiding applications using <b>Node.js</b> and <b>Xamarin.Android</b> in my spare time.
+         While this is just a taste of what I have been using recently I also am experienced using the following other languages and libraries:
+         <b>JavaScript</b>,
+         <b>TypeScript</b>,
+         <b>HTML</b>,
+         <b>CSS</b>,
+         <b>AngularJS</b>,
+         <b>C#</b>,
+         <b>Java</b>,
+         <b>SQL</b>,
+         <b>MongoDB</b>,
+         <b>jQuery</b>,
+         <b>Bootstrap</b>, 
+         <b>Python</b>,
+         <b>Meteor</b>,
+         and
+         <b>C</b>
+         .
+      </p>
       <br />
       <p>I have a work hard play hard outlook on life and spend my time completing school assignments, working on side projects, solving puzzles, and visiting amusement parks whenever the chance presents itself.</p>
     </div>
@@ -65,15 +84,24 @@
       <div align="center" class="content">
         <div class="row">
           <div class="col-xs-offset-3 col-xs-6">
+            <a class="right" href="#allegient">
+              <div class="custom-thumbnail center-block">
+                <div><img alt="logo" src="Images/allegient.png" /></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
             <a class="right" href="#ventures">
               <div class="custom-thumbnail center-block">
                 <div><img alt="logo" src="Images/ventures.png" /></div>
               </div>
             </a>
           </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-offset-3 col-xs-6">
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
             <a class="right" href="#progressive">
               <div class="custom-thumbnail center-block">
                 <div><img alt="logo" src="Images/logo.svg" /></div>
@@ -83,9 +111,30 @@
         </div>
       </div>
     </section>
+    <section id="allegient" class="experience">
+      <div class="wrapper">
+        <h2>Allegient <span class="subtitle">(2015 - Present)</span></h2>
+
+        <div class="link"><a class="left" href="#experience">Back</a></div>
+      </div>
+      <div align="center" class="content">
+        <p><a href="http://www.allegient.com"><b>Allegient</b></a> is a consulting firm made up of a team of elite business and IT consultants that represent some of the top minds in the industry.
+          Allegient focuses on solving its clients’ business problems via expertly designed technology solutions to help those businesses do their best work through the power of technology. </p>
+        <br />
+        <p>My first engagement took me to <a href="https://www.sevencorners.com"><b>Seven Corners, Inc</b></a>, a travel insurance and specialty benefit management company based in Carmel, IN.
+          There I worked on an <b>ASP.NET</b> application for selling policies and collecting payment information. As part of my work at Seven Corners I enhanced the rating algorithms to allow agents
+          the ability to prorate a policy.
+        </p>
+        <br />
+        <p>My next egagment was for <a href="https://www.nautilusagents.com/"><b>Nautilus Insurance</b></a>, a company that specializes in excess insurance. This was a year long project developing an <a href="https://angular.io/"><b>Angular</b></a>
+        application for writing insurance policies for three different lines of business. The backend was written using <b>ASP.NET</b> and <b>.NetCore</b>. As one of Allegient's formost experts on Angular (version 2+)
+        I was responsible for architecting a majority of the frontend components. In addtion to the client side code I also created a validation engine that can validate information on the policy using
+        rules that are expressed as data.</p>
+      </div>
+    </section>
     <section id="ventures" class="experience">
       <div class="wrapper">
-        <h2>Rose-Hulman Ventures</h2>
+        <h2>Rose-Hulman Ventures <span class="subtitle">(2012 - 2015)</span></h2>
         <div class="link"><a class="left" href="#experience">Back</a></div>
       </div>
       <div align="center" class="content">
@@ -104,7 +153,7 @@
     </section>
     <section id="progressive" class="experience">
       <div class="wrapper">
-        <h2>Progressive Insurance</h2>
+        <h2>Progressive Insurance <span class="subtitle">(Summer 2013)</span></h2>
         <div class="link"><a class="left" href="#experience">Back</a></div>
       </div>
       <div align="center" class="content">
@@ -169,6 +218,9 @@
       $('html, body').animate({
         scrollTop: $($(this).attr("href")).offset().top
       }, 500);
+
+      $('.experience').removeClass("go");
+      $('.experience').removeClass("hide");
     });
     $("a.left").click(function(e) {
       // Prevent a page reload when a link is pressed

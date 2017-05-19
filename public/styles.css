@@ -74,6 +74,13 @@ h2 {
   white-space: nowrap;
 }
 
+h2 > .subtitle {
+  text-transform: none;
+  letter-spacing: 0.05em;
+  font-size: 0.7em;
+  vertical-align: 8%;
+}
+
 #intro {
   font-size: 7.250em;
   letter-spacing: 0.175em;
@@ -260,15 +267,22 @@ section {
   background-color: #449bb5;
 }
 
-#ventures, #progressive {
+.experience {
   z-index: 3;
   position: absolute;
-  background-color: #27313d;
   transform: translateX(100%);
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -o-transform: translateX(100%);
+}
+
+#allegient {
+  background-color: #266093;
+}
+
+#ventures {
+  background-color: #27313d;
 }
 
 #progressive {
@@ -292,7 +306,7 @@ section {
 }
 
 #about {
-  background-color: #68c39f;
+  background-color: #009688;
 }
 
 #resume {
@@ -333,7 +347,7 @@ section {
 }
 
 .custom-thumbnail img {
-  padding: 0px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
   width: 375px;
   height: 146px;
   display: table;
